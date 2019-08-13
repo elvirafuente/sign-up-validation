@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Sign Up with validation</title>
+  </head>
+  <body>
+        <div class="container">
+            <h1>Sign Up</h1>
+            <form class="col s12" id="validationForm" novalidate>
+            <div class="row">
+                <div class="input-field col s6">
+                <label for="firstName">First Name</label>
+                <input
+                    type="text"
+                    name="First Name"
+                    id="firstName"
+                />
+                <span class="helper-text"></span>
+                </div>
+                <div class="input-field col s6">
+                <label for="lastName">Last Name</label>
+                <input
+                    type="text"
+                    name="Last Name"
+                    id="lastName"
+                />
+                <span class="helper-text"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    name="Password"
+                    id="password"
+                />
+                <span class="helper-text"></span>
+                </div>
+                <div class="input-field col s6">
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    name="Confirm Password"
+                    id="confirmPassword"
+                />
+                <span class="helper-text" id="confirmPasswordHelper"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    name="Email"
+                    id="email"                   
+                />
+                <span class="helper-text"></span>
+                </div>
+            </div>
+            <button class="btn waves-effect waves-light" id="button" type="submit">
+                SignUp
+            </button>
+            <span class="helper-text"></span>
+            </form>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="sources/main.js"></script>
+  </body>
+</html>
